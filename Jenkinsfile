@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'REPLACE_WITH_FLASK_GITHUB_REPOSITORY_URL'
+                git url: 'https://github.com/ShravanSM/jenkins-flask-backend.git', branch: 'main'
             }
         }
         stage('Install dependencies') {
