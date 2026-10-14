@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Install dependencies') {
             steps {
-                bat 'python -m pip install -r requirements.txt'
+                bat '"C:\\Users\\shrav\\AppData\\Local\\Programs\\Python\\Python311\\python.exe" -m pip install -r requirements.txt'
             }
         }
         stage('Verify application') {
