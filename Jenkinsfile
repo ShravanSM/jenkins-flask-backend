@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Verify application') {
             steps {
-                bat 'python -m py_compile app.py'
+                bat '"C:\\Users\\shrav\\AppData\\Local\\Programs\\Python\\Python311\\python.exe" -m py_compile app.py'
             }
         }
         stage('Deploy to EC2') {
